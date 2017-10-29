@@ -190,9 +190,11 @@ public class MainActivity extends Activity
 		
 		//Setup picker for pressure group characters
 		PGPicker.setWrapSelectorWheel(false);
-		String [] input = new String [] {"-", "A", "B", "C", "D", "E", "F", "G",
-			"H", "I", "J",  "K", "L", "M", "N", "O", "P", "Q", "R", "S", "T", "U",
-			"V", "W", "X", "Y", "Z"};
+		String [] input = new String [] {"-", "A", "B", "C", "D", "E",
+						 "F", "G", "H", "I", "J", "K",
+						 "L", "M", "N", "O", "P", "Q",
+						 "R", "S", "T", "U", "V", "W",
+						 "X", "Y", "Z"};
 		PGPicker.setDisplayedValues(input);
 		PGPicker.setMinValue(0);
 		PGPicker.setMaxValue(input.length - 1);

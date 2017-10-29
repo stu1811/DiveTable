@@ -42,8 +42,13 @@ public class InputFilterMinMax implements InputFilter
 		} catch (NumberFormatException nfe) {}
 		return "";
 	}
-	private boolean isInRange(int a, int b, int c)
+	private boolean isInRange(int min, int max, int input)
 	{
-		return b > a ? c >= a && c <= b : c >= b && c <= a;
+		if(min > max)
+			return false;
+		if(input < min || input > max)
+			return false;
+		else
+			return true;
 	}
 }
