@@ -41,7 +41,6 @@ public class MainActivity extends Activity
 		{120, 3, 3, 5, 6, 7, 8, 9, 10, 11, -1, 12, 13},
 		{130, 3, 3, 5, 6, 7, -1, 8, 9, 10},
 		{140, 0, -1, 4, 5, 6, 7, 8}
-
 	};
 
 	private final int table2[][] = 
