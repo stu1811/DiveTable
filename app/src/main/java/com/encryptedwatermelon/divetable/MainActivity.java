@@ -10,6 +10,7 @@ import android.content.Context;
 import android.graphics.Color;
 import android.content.res.*;
 import android.text.*;
+import android.widget.NumberPicker.*;
 
 
 
@@ -295,6 +296,15 @@ public class MainActivity extends Activity
 				}
 			});
 			
+		//Add listener for  pressure group
+		PGPicker.setOnValueChangedListener(new NumberPicker.OnValueChangeListener() {
+				@Override
+				public void onValueChange(NumberPicker numberPicker, int i, int i2)
+				{
+					calcULATE();
+				}
+			});
+
     } //End On Create
 
 	//Zero out PG and SI if bottom time is not available
